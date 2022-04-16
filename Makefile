@@ -7,7 +7,7 @@ miniL: miniL-lex.o
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-miniL-lex.c: miniL.lex
+miniL-lex.c: mini_l.lex
 	flex -o $@ $< 
 
 clean:
